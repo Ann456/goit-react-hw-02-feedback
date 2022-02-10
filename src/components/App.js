@@ -19,8 +19,8 @@ class App extends Component {
     return Math.round((this.state.good / this.countTotalFeedback()) * 100);
   };
 
-  onButtonClick = vote => {
-    this.setState(prevState => ({ [vote]: prevState[vote] + 1 }));
+  onButtonClick = e => {
+    this.setState(prevState => ({ [e]: prevState[e] + 1 }));
   };
    
   render() {
