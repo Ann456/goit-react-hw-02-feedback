@@ -1,6 +1,6 @@
 import s from './Statistics.module.css';
 
-const Statistics = ({ statistics, total }) => {
+const Statistics = ({ statistics, total, positivePersentage }) => {
     return (
         <>
             {total > 0 && (
@@ -11,6 +11,7 @@ const Statistics = ({ statistics, total }) => {
                         </li>
                     ))}
                     <li className={s.stat}>Total:{total}</li>
+                    <li className={s.stat}>Persentage:{positivePersentage}</li>
                 </ul>
             )}
         </>
