@@ -27,7 +27,7 @@ class App extends Component {
     const options = Object.keys(this.state);
 
     return (
-      <div>
+      <>
         <Section title="Please leave feedback">
           <FeedbackOptions
             options={options}
@@ -48,7 +48,7 @@ class App extends Component {
             <Notification message="There is no feedback"/>
           )}
         </Section>
-      </div>
+      </>
     );
   }
 }
